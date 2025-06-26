@@ -1,40 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable Gifts</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gift Info Page</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <header>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
-        <nav id="menu">
-            <ul>
-                <li>https://companymainwebsite.com</li>
-                <li><a href="#info">Info About Gifts</a></li>
-            </ul>
-        </nav>
-        <img src="logo.png" alt="Company Logo" class="logo">
-    </header>
-    <main>
-        <section id="info">
-            <div class="gift-item">
-                <img src="water_bottle.jpeg" alt="Water Bottle">
-                <div class="gift-info">
-                    <h2>Reusable Water Bottle</h2>
-                    <p>This water bottle is made from recycled materials and is designed to reduce single-use plastic waste. It's durable, stylish, and perfect for everyday use.</p>
-                </div>
-            </div>
-            <div class="gift-item">
-                <div class="gift-info">
-                    <h2>Eco-Friendly Tote Bag</h2>
-                    <p>Our tote bag is made from organic cotton and is perfect for carrying groceries, books, or other essentials. It's a great alternative to plastic bags and promotes sustainable living.</p>
-                </div>
-                <img src="tote_bag.jpeg" alt="Tote Bag">
-            </div>
-        </section>
-    </main>
-    <script src="script.js"></script>
+  <div class="top-bar" onclick="expandBar()">
+    <div class="top-bar-content">
+      <span>Gift info</span>
+      <span>Main website</span>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="product-section" id="section1">
+      <div class="product-text">
+        <h1>Water Bottle</h1>
+        <p>This stylish water bottle keeps your drinks cold for 24 hours and hot for 12 hours. Made from stainless steel and available in multiple colors.</p>
+      </div>
+      <div class="product-image">
+        <img src="water_bottle.jpg" alt="Water Bottle" />
+      </div>
+    </div>
+
+    <div class="product-section" id="section2">
+      <div class="product-image">
+        <img src="tote_bag.jpg" alt="Tote Bag" />
+      </div>
+      <div class="product-text">
+        <h1>Tote Bag</h1>
+        <p>Our eco-friendly tote bag is perfect for everyday use. Made from recycled materials and designed for durability and style.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
+
